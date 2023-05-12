@@ -1,0 +1,51 @@
+[
+    {
+      "question": "Mikä on maailman suurin valtameri?",
+      "options": ["Atlantin valtameri", "Intian valtameri", "Tyynimeri", "Pohjoinen jäämeri"],
+      "answerIndex": 2,
+      "difficulty": 1
+    },
+    {
+      "question": "Kuka keksi painovoiman lain?",
+      "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Nikola Tesla"],
+      "answerIndex": 0,
+      "difficulty": 2
+    },
+    {
+      "question": "Mikä on maailman korkein vuori?",
+      "options": ["Mount Everest", "K2", "Kangchenjunga", "Lhotse"],
+      "answerIndex": 0,
+      "difficulty": 3
+    },
+    {
+      "question": "Mikä on maailman paras pelialusta?",
+      "options": ["NES", "C64", "Amiga", "Sega"],
+      "answerIndex": 0,
+      "difficulty": 1
+    },
+    {
+      "question": "asd?",
+      "options": ["hjkkjh", "hjgkjhgk", "gdfhdfgh", "retgcfv"],
+      "answerIndex": 2,
+      "difficulty": 1
+    },
+    {
+      "question": "dfg",
+      "options": ["ertgz", "dfgvb", "waesd", "retgdf"],
+      "answerIndex": 0,
+      "difficulty": 2
+    },
+    {
+      "question": "ewew",
+      "options": ["rgfcvb", "esfdxvc", "wesdc", "uikjhm"],
+      "answerIndex": 2,
+      "difficulty": 3
+    },
+    {
+      "question": "zxc",
+      "options": ["thgnb", "aesds", "Amiga", "fgbcv"],
+      "answerIndex": 2,
+      "difficulty": 1
+    }
+]
+  
