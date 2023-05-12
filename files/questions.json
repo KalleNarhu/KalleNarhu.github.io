@@ -22,30 +22,6 @@
       "options": ["NES", "C64", "Amiga", "Sega"],
       "answerIndex": 0,
       "difficulty": 1
-    },
-    {
-      "question": "asd?",
-      "options": ["hjkkjh", "hjgkjhgk", "gdfhdfgh", "retgcfv"],
-      "answerIndex": 2,
-      "difficulty": 1
-    },
-    {
-      "question": "dfg",
-      "options": ["ertgz", "dfgvb", "waesd", "retgdf"],
-      "answerIndex": 0,
-      "difficulty": 2
-    },
-    {
-      "question": "ewew",
-      "options": ["rgfcvb", "esfdxvc", "wesdc", "uikjhm"],
-      "answerIndex": 2,
-      "difficulty": 3
-    },
-    {
-      "question": "zxc",
-      "options": ["thgnb", "aesds", "Amiga", "fgbcv"],
-      "answerIndex": 2,
-      "difficulty": 1
     }
 ]
   
