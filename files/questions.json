@@ -22,6 +22,12 @@
       "options": ["NES", "C64", "Amiga", "Sega"],
       "answerIndex": 0,
       "difficulty": 1
-    }
+    },
+    {
+      "question": "Mikä on kullan kemiallinen merkki",
+      "options": ["Ag", "Au", "Al", "Ar"],
+      "answerIndex": 1,
+      "difficulty": 1
+    }   
 ]
   
