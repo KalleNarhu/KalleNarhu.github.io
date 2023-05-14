@@ -8,6 +8,10 @@
     font-family: 'Luxurious Roman', cursive, Arial, Helvetica, sans-serif;
     color: #aa2621;
   }
+
+   h2{
+     color: #aa2621;
+   }
   
   #options {
     display: flex;
