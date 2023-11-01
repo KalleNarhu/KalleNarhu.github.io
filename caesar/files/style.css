@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  }
+
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+h1 {
+    font-size: 96px;
+    font-family: 'Luxurious Roman', cursive, Arial, Helvetica, sans-serif;
+    color: #aa2621;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+  }
+  
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+.option {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+#next-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+#score {
+    font-weight: bold;
+  }
+.correct {
+    background-color: #5cb85c; /* Vihreä väri oikealle vastaukselle */
+  }
+  
+.incorrect {
+    background-color: #d9534f; /* Punainen väri väärälle vastaukselle */
+  }
+
+.life-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
