@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sipulin epäterveellisyystutkimus</title>
+  <title>Caesar 2000</title>
+  <link rel="stylesheet" type="text/css" href="files/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Sipulin epäterveellisyystutkimus</h1>
-    
-    <h2>Tutkimuksen tarkoitus</h2>
-    <p>Tämä tutkimus pyrkii selvittämään sipulin kulutuksen mahdollisia haitallisia vaikutuksia ihmisen terveyteen ja hyvinvointiin.</p>
-    
-    <h2>Tutkimusmenetelmät</h2>
-    <p>Tutkimus toteutettiin satunnaistetulla kokeella, johon osallistui 1000 vapaaehtoista aikuista. Osallistujat jaettiin kahteen ryhmään: sipulia syövät (koe-ryhmä) ja sipulia välttävät (verrokkiryhmä). Tutkimuksen kesto oli 12 viikkoa.</p>
+  <div class="container">
+    <h1>Caesar 2000</h1>
+    <p id="question"></p>
+    <div id="options">
+      <button class="option"></button>
+      <button class="option"></button>
+      <button class="option"></button>
+      <button class="option"></button>
+    </div>
+    <div id="lives">
+      <img src="files/elämä_kuvake.png" alt="Elämä" class="life-icon">
+      <img src="files/elämä_kuvake.png" alt="Elämä" class="life-icon">
+      <img src="files/elämä_kuvake.png" alt="Elämä" class="life-icon">
+    </div>
+    <button id="next-btn">Seuraava</button>
+    <p id="score">Pisteet: 0</p>
+  </div>
 
-    <h2>Koe-ryhmä</h2>
-    <p>Osallistujat tässä ryhmässä sisällyttivät päivittäiseen ruokavalioonsa sipulia eri muodoissa, kuten raakana, keitettynä ja paistettuna. Heidän sipulin kulutustaan seurattiin tarkasti, ja heidät kehotettiin syömään vähintään yhden sipulin päivässä.</p>
-
-    <h2>Verrokkiryhmä</h2>
-    <p>Osallistujat tässä ryhmässä välttivät kokonaan sipulin kulutusta koko tutkimuksen ajan. Heidän ruokavalionsa koostui muista vihanneksista ja kasviksista.</p>
-    
-    <h2>Tulokset</h2>
-    <p>Tutkimuksen päätyttyä havaittiin seuraavat tulokset:</p>
-    <ul>
-        <li>Ravitsemukselliset puutteet: Sipulia välttävän verrokkiryhmän osallistujilla havaittiin suurempi riski ravitsemuksellisille puutoksille. Sipulissa on runsaasti ravintoaineita, kuten C-vitamiinia ja kuitua, jotka puuttuivat verrokkiryhmän ruokavaliosta.</li>
-        <li>Sydän- ja verisuoniterveys: Koe-ryhmän osallistujilla havaittiin pienempi riski sydän- ja verisuonisairauksille. Sipulissa esiintyvät bioaktiiviset yhdisteet, kuten flavonoidit ja rikkiyhdisteet, voivat edistää sydämen terveyttä ja alentaa verenpainetta.</li>
-        <li>Ruuansulatusongelmat: Sipulia syöneillä osallistujilla oli suurempi esiintyvyys ruuansulatusongelmista, kuten ilmavaivoista ja närästyksestä. Tämä saattaa johtua sipulissa luontaisesti esiintyvistä fytaattiyhdisteistä, jotka voivat ärsyttää herkkää ruuansulatusjärjestelmää.</li>
-        <li>Virtsan haju: Koe-ryhmään kuuluvat osallistujat raportoivat lisääntyneestä virtsan hajusta verrattuna verrokkiryhmään. Tämä johtuu sipulin sisältämästä sulfidiyhdisteestä, joka voi erittyä virtsan mukana ja aiheuttaa epämiellyttävän hajun.</li>
-    </ul>
+  <script src="files/script.js"></script>
 </body>
 </html>
