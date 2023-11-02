@@ -41,25 +41,25 @@
       "answerIndex": 2,
       "difficulty": 2
     },
-        {
+    {
       "question": "Mikä on Kanadan pääkaupunki?",
       "options": ["Toronto", "Montreal", "Edmonton", "Ottawa"],
       "answerIndex": 3,
       "difficulty": 2
     },
-        {
+    {
       "question": "Kuka voitti jääkiekon mm kisat vuonna 1997",
       "options": ["Ruotsi", "Venäjä", "Kanada", "Tšekki"],
       "answerIndex": 2,
       "difficulty": 2
-    }
-        {
+    },
+    {
       "question": "Mikä on vedyn kemiallinen merkki?",
       "options": ["Ve", "V", "H", "Hy"],
       "answerIndex": 2,
       "difficulty": 1
     },
-        {
+    {
       "question": "Mikä on maailman vanhin tunnettu kirjoitettu kieli?",
       "options": ["Kiina", "Sumeria", "Egypti", "Heprea"],
       "answerIndex": 1,
