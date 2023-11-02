@@ -24,7 +24,7 @@ function loadQuestions() {
 }
 
 // Elämät
-let lives = 2;
+let lives = 3;
 
 function showLives() {
   const livesElement = document.getElementById('lives');
