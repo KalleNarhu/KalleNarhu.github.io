@@ -1,9 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi" class="dark">
 <head>
-  <title>KalleNarhu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalleNarhu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f1016',
+                            card: '#181a26',
+                            border: '#2a2e43',
+                            accent: '#a855f7',
+                            cyan: '#06b6d4',
+                            text: '#f3f4f6',
+                            muted: '#9ca3af'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-  <h1>Ei täällä mitään ole</h1>
+<body class="bg-brand-dark text-brand-text font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- NAVIGAATIO -->
+    <header class="sticky top-0 z-50 bg-brand-dark/85 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-black tracking-wider bg-gradient-to-r from-brand-cyan to-brand-accent bg-clip-text text-transparent">
+                [NIMESI / LOGO]
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#etusivu" class="hover:text-brand-cyan transition-colors">Etusivu</a>
+                <a href="#aikataulu" class="hover:text-brand-cyan transition-colors">Aikataulu</a>
+                <a href="#sisalto" class="hover:text-brand-cyan transition-colors">Sisältö</a>
+                <a href="#laitteisto" class="hover:text-brand-cyan transition-colors">Laitteisto</a>
+                <a href="#yhteys" class="hover:text-brand-cyan transition-colors">Yhteys</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="https://twitch.tv/kallenarhu" target="_blank" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold rounded-lg transition-all shadow-lg shadow-purple-600/20 flex items-center gap-2">
+                    <i class="fa-brands fa-twitch"></i> Twitch
+                </a>
+                <a href="https://youtube.com/@kallenarhuu" target="_blank" class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded-lg transition-all shadow-lg shadow-red-600/30 flex items-center gap-2">
+                    <i class="fa-brands fa-youtube"></i> YouTube
+                </a>   
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO / ETUSIVU -->
+    <section id="etusivu" class="relative py-20 md:py-32 overflow-hidden border-b border-brand-border bg-gradient-to-b from-brand-card/50 to-brand-dark">
+        <div class="max-w-6xl mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold mb-6">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Otsikko / Tila (esim. Seuraava lähetys pian!)
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6">
+                    Moro! Minä olen <span class="bg-gradient-to-r from-brand-cyan to-brand-accent bg-clip-text text-transparent">KalleNarhu</span>
+                </h1>
+                <p class="text-brand-muted text-lg mb-8 leading-relaxed">
+                    Peleissä sähläävä striimaaja, joka pelaa pelejä laidasta laitaan mitä milloinkin tekee mieli pelata. Youtubeen tulee myös videoita vaihtelevalla aikataululla.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://twitch.tv/kallenarhu" target="_blank" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 font-bold rounded-xl transition-all shadow-lg shadow-purple-600/30 flex items-center gap-3">
+                        <i class="fa-brands fa-twitch text-xl"></i> Twitch
+                    </a>
+                    <a href="https://youtube.com/@kallenarhuu" target="_blank" class="px-6 py-3 bg-red-600 hover:bg-red-700 font-bold rounded-xl transition-all shadow-lg shadow-red-600/30 flex items-center gap-3">
+                        <i class="fa-brands fa-youtube text-xl"></i> YouTube
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="w-full aspect-video rounded-2xl bg-brand-card border border-brand-border flex items-center justify-center relative overflow-hidden shadow-2xl group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-cyan/10 to-brand-accent/10"></div>
+                    <span class="text-brand-muted text-sm font-medium z-10 flex flex-col items-center gap-2">
+                        <i class="fa-regular fa-image text-4xl text-brand-cyan"></i>
+                        [Kuvatiedosto / Logo / Striimikuva tähän]
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LÄHETYSAIKATAULU -->
+    <section id="aikataulu" class="py-20 border-b border-brand-border">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black mb-3">Lähetysaikataulu</h2>
+                <p class="text-brand-muted">Striimit painottuvat yleensä aamuun / aamupäivään ja striimit tulee lähes joka päivä</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SISÄLTÖ & VIDEOKOSTEET -->
+    <section id="sisalto" class="py-20 border-b border-brand-border bg-brand-card/20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black mb-3">Viimeisimmät videot / VODit</h2>
+                <p class="text-brand-muted">Nostoja YouTube-kanavalta tai parhaat palat</p>
+            </div>
+
+            <!-- TÄMÄ ID LISÄTTY, JOTTA SKRIPTI LÖYTÄÄ MINNE VIDEOT TUODAAN -->
+            <div id="youtube-videos" class="grid md:grid-cols-3 gap-6">
+                <div class="bg-brand-card border border-brand-border rounded-xl p-8 text-center text-brand-muted md:col-span-3 flex flex-col items-center gap-3">
+                    <i class="fa-solid fa-circle-notch fa-spin text-2xl text-brand-cyan"></i>
+                    <span>Haetaan uusimpia videoita YouTube-syötteestä...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAITTEISTO / SETUP -->
+    <section id="laitteisto" class="py-20 border-b border-brand-border">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black mb-3">Laitteisto & Setup</h2>
+                <p class="text-brand-muted">Mitä rautaa ja varusteita käytän lähetyksissä?</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-brand-card border border-brand-border rounded-xl p-6">
+                    <h3 class="font-bold text-lg mb-4 text-brand-cyan flex items-center gap-2">
+                        <i class="fa-solid fa-computer"></i> Tietokone & Striimaus
+                    </h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li><strong class="text-brand-text">Prosessori:</strong> [Prosessori tähän]</li>
+                        <li><strong class="text-brand-text">Näytönohjain:</strong> [Näytönohjain tähän]</li>
+                        <li><strong class="text-brand-text">Tallennus/Koodaus:</strong> OBS Studio & Hardwares</li>
+                    </ul>
+                </div>
+
+                <div class="bg-brand-card border border-brand-border rounded-xl p-6">
+                    <h3 class="font-bold text-lg mb-4 text-brand-accent flex items-center gap-2">
+                        <i class="fa-solid fa-microphone-lines"></i> Ääni & Oheislaitteet
+                    </h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li><strong class="text-brand-text">Mikrofoni:</strong> [Mikrofoni tähän]</li>
+                        <li><strong class="text-brand-text">Sim Rig / Ohjaimet:</strong> [Ratin / ohjaimen tiedot]</li>
+                        <li><strong class="text-brand-text">Muuta:</strong> [Muut varusteet]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YHTEYSMUOTO / SOSIAALISET MEDIAT -->
+    <section id="yhteys" class="py-20">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-black mb-4">Ota yhteyttä & Seuraa somessa</h2>
+            <p class="text-brand-muted mb-8">Löydät minut näistä kanavista. Yhteistyökyselyt ja viestit voi lähettää sähköpostitse.</p>
+            
+            <div class="flex justify-center gap-4 mb-10">
+                <a href="https://twitch.tv/[kayttajanimi]" target="_blank" class="w-12 h-12 rounded-xl bg-brand-card border border-brand-border flex items-center justify-center hover:border-purple-500 hover:text-purple-400 transition-all text-xl">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+                <a href="https://youtube.com/@kallenarhu" target="_blank" class="w-12 h-12 rounded-xl bg-brand-card border border-brand-border flex items-center justify-center hover:border-red-500 hover:text-red-400 transition-all text-xl">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://discord.gg/[kutsu]" target="_blank" class="w-12 h-12 rounded-xl bg-brand-card border border-brand-border flex items-center justify-center hover:border-indigo-500 hover:text-indigo-400 transition-all text-xl">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </div>
+
+            <div class="inline-block bg-brand-card border border-brand-border rounded-xl px-6 py-4 text-sm">
+                Sähköposti: <a href="mailto:sahkoposti@esimerkki.fi" class="text-brand-cyan font-semibold hover:underline">[sahkoposti@esimerkki.fi]</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALATUNNISTE -->
+    <footer class="py-8 border-t border-brand-border text-center text-xs text-brand-muted">
+        <p>&copy; 2026 [Nimesi]. Kaikki oikeudet pidätetään. | Tehty helposti muokattavaksi pohjaksi.</p>
+    </footer>
+
+    <!-- SKRIPTI -->
+    <script>
+        // Channel ID lainausmerkeissä, jotta se toimii oikein
+        const CHANNEL_ID = 'UCw1I_FyTNgAewa7Sar8DWcA'; 
+
+        async function fetchYouTubeVideos() {
+            const container = document.getElementById('youtube-videos');
+            
+            if (CHANNEL_ID === 'UCw1I_FyTNgAewa7Sar8DWcA') {
+                container.innerHTML = `
+                    <div class="bg-brand-card border border-brand-border rounded-xl p-6 text-center text-brand-muted md:col-span-3">
+                        <p class="mb-2 font-bold text-brand-text">⚠️ YouTube Channel ID puuttuu skriptistä!</p>
+                        <p class="text-xs">Lisää HTML-tiedoston alareunaan skriptiin oma YouTube Channel ID:si, niin videot alkavat näkyä automaattisesti.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            try {
+                const url = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D${CHANNEL_ID}`;
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data.status === 'ok' && data.items && data.items.length > 0) {
+                    container.innerHTML = ''; 
+                    const latestVideos = data.items.slice(0, 3);
+
+                    latestVideos.forEach(video => {
+                        const videoId = video.link.split('v=')[1] || '';
+                        const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+
+                        const card = `
+                            <a href="${video.link}" target="_blank" class="bg-brand-card border border-brand-border rounded-xl overflow-hidden group hover:border-brand-cyan transition-all flex flex-col">
+                                <div class="aspect-video bg-brand-dark overflow-hidden relative">
+                                    <img src="${thumbnailUrl}" alt="${video.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                                </div>
+                                <div class="p-5 flex flex-col flex-grow">
+                                    <h3 class="font-bold mb-2 text-brand-text group-hover:text-brand-cyan transition-colors line-clamp-2">${video.title}</h3>
+                                    <p class="text-xs text-brand-muted mt-auto">Julkaistu: ${new Date(video.pubDate).toLocaleDateString('fi-FI')}</p>
+                                </div>
+                            </a>
+                        `;
+                        container.innerHTML += card;
+                    });
+                } else {
+                    throw new Error('Ei löytynyt videoita.');
+                }
+            } catch (error) {
+                container.innerHTML = `
+                    <div class="bg-brand-card border border-brand-border rounded-xl p-6 text-center text-brand-muted md:col-span-3">
+                        <p>Videoiden lataus epäonnistui automaattisesti. Tarkista YouTube Channel ID.</p>
+                    </div>
+                `;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchYouTubeVideos);
+    </script>
 </body>
 </html>
