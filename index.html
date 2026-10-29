@@ -101,24 +101,66 @@
         </div>
     </section>
 
-    <!-- AUTOMAATTINEN UUSIMMAN VIDEON UPOTUS -->
+    <!-- SISÄLTÖ & VIDEOKOSTEET: SUOSITELTU VIDEO JA SOITTOLISTA -->
     <section id="sisalto" class="py-20 border-b border-brand-border bg-brand-card/20">
-        <div class="max-w-4xl mx-auto px-4">
+        <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-black mb-3">Uusin YouTube-video</h2>
-                <p class="text-brand-muted">Tämä soitin päivittyy aina automaattisesti uusimmalla videollasi</p>
+                <h2 class="text-3xl font-black mb-3">Videosuositukset</h2>
+                <p class="text-brand-muted">Tsekkaa tästä minun suosittelemani poiminta sekä suosikkisoittolista!</p>
             </div>
 
-            <!-- Responsiivinen YouTube-soittimen upotus, joka hakee kanavasi uusimman videon -->
-            <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-brand-border bg-brand-card">
-                <iframe 
-                    class="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/videoseries?list=UUw1I_FyTNgAewa7Sar8DWcA" 
-                    title="Uusin YouTube-video" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- KORTTI 1: YKSI SUOSITTELU VIDEO -->
+                <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden shadow-xl flex flex-col group hover:border-brand-cyan transition-all">
+                    <!-- Videon upotussoitin -->
+                    <div class="relative w-full aspect-video bg-brand-dark overflow-hidden">
+                        <!-- VAIHDA 'TÄHÄN_VIDEON_ID' haluamasi videon tunnuksella (esim. dQw4w9WgXcQ) -->
+                        <iframe 
+                            class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/OZE_fzE2kX4" 
+                            title="Suositeltu video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-red-500/10 text-red-400 border border-red-500/20 text-xs font-semibold w-fit mb-3">
+                            <i class="fa-brands fa-youtube"></i> Suositeltu video
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-brand-text">Tulossa retropelijoulukalenteri + höpinää striimeistä</h3>
+                        <p class="text-sm text-brand-muted mb-4 leading-relaxed">
+                            Ajatuksia tulevasta retropelijoulukalenterista + yleistä höpöttelyä
+                        </p>
+                    </div>
+                </div>
+
+                <!-- KORTTI 2: SOITTOLISTA SUOSITUS -->
+                <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden shadow-xl flex flex-col group hover:border-brand-accent transition-all">
+                    <!-- Soittolistan upotussoitin -->
+                    <div class="relative w-full aspect-video bg-brand-dark overflow-hidden">
+                        <!-- VAIHDA 'TÄHÄN_SOITTOLISTAN_ID' haluamasi soittolistan tunnuksella (löytyy listan URL-osoitteesta list=... jälkeen) -->
+                        <iframe 
+                            class="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/videoseries?list=PLLnq1kfJnMXH28b6hF3CpQzlWHoXUdlSH" 
+                            title="Suositeltu soittolista" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 text-xs font-semibold w-fit mb-3">
+                            <i class="fa-solid fa-list"></i> Suositeltu soittolista
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-brand-text">Sly 2 läpipeluu</h3>
+                        <p class="text-sm text-brand-muted mb-4 leading-relaxed">
+                            Ensimmäinen läpipeluu tästä pelistä
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -161,7 +203,7 @@
     <section id="yhteys" class="py-20">
         <div class="max-w-3xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-black mb-4">Ota yhteyttä & Seuraa somessa</h2>
-            <p class="text-brand-muted mb-8">Löydät minut näistä kanavasta. Yhteistyökyselyt ja viestit voi lähettää sähköpostitse.</p>
+            <p class="text-brand-muted mb-8">Löydät minut näistä kanavista. Yhteistyökyselyt ja viestit voi lähettää sähköpostitse.</p>
             
             <div class="flex justify-center gap-4 mb-10">
                 <a href="https://twitch.tv/kallenarhu" target="_blank" class="w-12 h-12 rounded-xl bg-brand-card border border-brand-border flex items-center justify-center hover:border-purple-500 hover:text-purple-400 transition-all text-xl">
